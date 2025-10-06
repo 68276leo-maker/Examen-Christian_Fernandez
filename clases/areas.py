@@ -25,3 +25,15 @@ class Areas:
 
     def mostrar_resultado_rectangulo(self, area):
         print(f"El área del rectángulo es: {area:.2f}")
+    
+    #Círculo
+    def leer_datos_circulo(self):
+        radio = float(input("Introduce el radio del círculo: "))
+        return radio
+
+    def calcular_area_circulo(self, radio):
+        import math
+        return math.pi * (radio ** 2)
+
+    def mostrar_resultado_circulo(self, area):
+        print(f"Área del círculo: {area:.4f}")
